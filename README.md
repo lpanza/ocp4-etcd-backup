@@ -1,5 +1,5 @@
 # ocp4-etcd-backup
-This project is meant to provide a sample ETCD backup solution embedded in OCP4. <br />
+This project is meant to provide a simple ETCD backup solution embedded in OCP4. <br />
 
 To apply the manifests, simply run kustomize or oc apply -k from the root of the repository: <br />
 ```kustomize build . | oc apply -f -``` <br />
