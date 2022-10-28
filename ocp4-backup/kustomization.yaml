@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: ocp-etcd-backup
 
 resources:
-- project.yml
+- namespace.yml
 - etcd-bck-sa.yml
 - etcd-bck-role.yml
 - etcd-bck-roleBinding.yml
@@ -18,7 +18,7 @@ patchesJson6902:
     name: privileged
   path: jsonPatch.yml
 
-image:
+images:
 - name: ocp-cli
   newName: registry.redhat.io/openshift4/ose-cli
   newTag: v4.11
