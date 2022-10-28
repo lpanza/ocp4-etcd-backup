@@ -1,0 +1,7 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: "Openshift Backup Automation Tool"
+    openshift.io/display-name: "Backup ETCD Automation"
+  name: ocp-etcd-backup
