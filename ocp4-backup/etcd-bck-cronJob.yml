@@ -22,8 +22,8 @@ spec:
             app: openshift-backup
         spec:
           containers:
-            - name: backup
-              image: "registry.redhat.io/openshift4/ose-cli"
+            - name: etcd-backup
+              image: ocp-cli
               command:
                 - "/bin/bash"
                 - "-c"

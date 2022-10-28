@@ -5,6 +5,10 @@ namespace: ocp-etcd-backup
 
 resources:
 - project.yml
+- etcd-bck-sa.yml
+- etcd-bck-role.yml
+- etcd-bck-roleBinding.yml
+- etcd-bck-cronJob.yml
 
 patchesJson6902:
 - target:
@@ -13,3 +17,8 @@ patchesJson6902:
     kind: SecurityContextConstraints
     name: privileged
   path: jsonPatch.yml
+
+image:
+- name: ocp-cli
+  newName: registry.redhat.io/openshift4/ose-cli
+  newTag: v4.11
