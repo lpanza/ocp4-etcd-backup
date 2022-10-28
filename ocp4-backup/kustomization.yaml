@@ -6,8 +6,8 @@ namespace: ocp-etcd-backup
 resources:
 - namespace.yml
 - etcd-bck-sa.yml
-- etcd-bck-role.yml
-- etcd-bck-roleBinding.yml
+- etcd-bck-clusterRoleBinding.yml
+- etcd-bck-clusterRole.yml
 - etcd-bck-cronJob.yml
 
 patchesJson6902:
