@@ -1,0 +1,4 @@
+---
+- op: add
+  path: /users
+  value: "system:serviceaccount:ocp-etcd-backup:openshift-backup"

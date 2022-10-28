@@ -5,3 +5,11 @@ namespace: ocp-etcd-backup
 
 resources:
 - project.yml
+
+patchesJson6902:
+- target:
+    group: security.openshift.io
+    version: v1
+    kind: SecurityContextConstraints
+    name: privileged
+  path: jsonPatch.yml
