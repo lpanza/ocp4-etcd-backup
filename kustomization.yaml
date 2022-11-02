@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
 - ocp4-backup
+
+commonAnnotations:
+  generated-by: "Kustomize"
+  repo-url: "https://github.com/lpanza/ocp4-etcd-backup.git"
