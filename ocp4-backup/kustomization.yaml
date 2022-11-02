@@ -10,14 +10,6 @@ resources:
 - etcd-bck-clusterRole.yml
 - etcd-bck-cronJob.yml
 
-patchesJson6902:
-- target:
-    group: security.openshift.io
-    version: v1
-    kind: SecurityContextConstraints
-    name: privileged
-  path: jsonPatch.yml
-
 images:
 - name: ocp-cli
   newName: registry.redhat.io/openshift4/ose-cli
