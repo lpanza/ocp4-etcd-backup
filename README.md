@@ -12,6 +12,9 @@ If you want to add an NFS mount just add the mount before executing the backup s
 and unmout it at the end: <br />
 ```chroot /host  sudo -E  umount /home/core/backup``` <br />
 <br />
+If you want to test the backup job, run the following command: <br />
+```oc create job backup --from=cronjob/openshift-backup -n ocp-etcd-backup```
+<br />
 
 
 # Notes
